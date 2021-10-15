@@ -1,0 +1,22 @@
+.l-header {
+  background-color: color(white);
+  z-index: 999;
+}
+
+.l-header-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header-title__logo-image {
+  height: 30px;
+  width: 100px;
+}
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
