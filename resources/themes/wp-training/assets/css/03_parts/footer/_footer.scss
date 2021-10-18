@@ -1,25 +1,15 @@
-// footer
-
-.footer {
-  //
+.l-footer {
+  height: 55px;
+  background-color: color(night-rider);
+  color: color(white);
 }
 
-.footer__main {
-  //
+.l-footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.footer__logo {
-  //
-}
-
-.footer__sns-menu {
-  //
-}
-
-.footer__copy {
-    //
-}
-
-.footer__copy-text {
-    //
+.footer-copyright {
+  font-size: 14px;
 }

@@ -4,7 +4,13 @@
 }
 
 .hero-background {
-    width: 100%;
+    @include pc() {
+        height: 800px;
+    }
+
+    @include sp() {
+        height: 960px;
+    }
 }
 
 .hero-text {

@@ -1,12 +1,14 @@
 export default class Scrolling {
     constructor(id) {
         this.element = document.getElementById(id);
+        this.imageId = `${id}-image`
     }
 
     parallax() {
         const $this = this;
-        const image = document.getElementById('js-catch-image');
-        const imageTop = image.offsetTop;
+        const imageTop = $this.element.offsetHeight;
+        const image = document.getElementById($this.imageId);
+        image.style.top = `${imageTop}px`;
         window.addEventListener('scroll', function () {
             if($this.isElementInViewport($this.element)) {
                 const percent = 100-$this.getElementScrolledPercentage($this.element)
@@ -14,6 +16,10 @@ export default class Scrolling {
                 image.style.top = `${top}px`;
             }
         });
+    }
+
+    fadeIn() {
+        const $this = this;
     }
 
     getElementScrolledPercentage(element){

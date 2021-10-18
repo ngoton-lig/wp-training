@@ -5,11 +5,16 @@
 }
 
 .sns-menu__list {
-    //
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sns-menu__item {
-    //
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sns-menu__link {
@@ -17,8 +22,8 @@
 }
 
 .sns-menu__svg {
-    //
     svg {
-        //
+        width: 32px;
+        height: 32px;
     }
 }

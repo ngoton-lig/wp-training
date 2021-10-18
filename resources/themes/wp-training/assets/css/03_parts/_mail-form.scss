@@ -1,0 +1,57 @@
+.mail-form {
+    display: flex;
+    justify-content: space-between;
+
+    input[type=text], select, textarea {
+        width: 100%;
+        height: 60px;
+        padding: 20px;
+        border: 1px solid color(gray);
+        margin-bottom: 30px;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        height: 60px;
+        background-color: color(night-rider);
+        padding: 20px;
+        margin-bottom: 30px;
+        color: white;
+        border: 0;
+        font-size: 20px;
+    }
+
+    textarea {
+        height: 150px;
+    }
+
+    @include sp() {
+        flex-direction: column;
+    }
+}
+
+.mail-form__info {
+    display: flex;
+    flex-direction: column;
+
+    @include pc() {
+        width: 49%;
+    }
+
+    @include sp() {
+        width: 100%;
+    }
+}
+
+.mail-form__content {
+    display: flex;
+    flex-direction: column;
+
+    @include pc() {
+        width: 49%;
+    }
+
+    @include sp() {
+        width: 100%;
+    }
+}
