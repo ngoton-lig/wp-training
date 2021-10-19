@@ -102,6 +102,7 @@
 .feature-list {
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .feature-article {
@@ -112,10 +113,13 @@
 
   @include sp() {
     width: 100%;
+    flex-shrink: 0;
   }
 }
 
 .feature-image {
+  opacity: 0;
+
   @include pc() {
     width: 196px;
     height: 196px;

@@ -1,0 +1,31 @@
+.slider-item-transition {
+  transition: transform 0.5s ease;
+}
+
+.slider-item-left {
+  transform: translateX(-100%);
+}
+
+.slider-item-right {
+  transform: translateX(100%);
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+
+  svg {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+.slider-button-prev {
+  left: 20px;
+}
+
+.slider-button-next {
+  right: 20px;
+}
