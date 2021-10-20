@@ -2,18 +2,7 @@
 extract(import_vars_whitelist(get_defined_vars()));
 $title_tag = is_front_page() ? 'h1' : 'span';
 ?>
-<div class="hero">
-    <div class="hero-background obj-fit">
-        <img src="<?= resolve_uri('assets/images/hero.png') ?>"/>
-    </div>
-    <div class="hero-text">
-        <h1 class="hero-heading">Hello World</h1>
-        <p class="hero-content">- description text -</p>
-    </div>
-    <a class="pagedown is-sp-show">
-        <?= get_svg_sprite('icon-arrow-down-circle'); ?>
-    </a>
-</div>
+<?php import_part('hero') ?>
 <header class="<?= get_modified_class('l-header', $modifier) ?><?= get_additional_class($additional) ?>" id="js-header">
     <div class="l-header-container l-container is-pc-show">
         <<?= $title_tag ?> class="header-title">

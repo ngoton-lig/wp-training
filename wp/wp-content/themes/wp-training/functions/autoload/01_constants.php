@@ -41,16 +41,18 @@ add_action('init', function () {
 
     //front page
     define('URL_HOME', home_url('/'));
-    define('NAME_HOME', 'Top');
+
+    define('URL_TOP', URL_HOME . '#catch');
+    define('NAME_TOP', 'Top');
 
     //post type
-    define('URL_NEWS', URL_HOME . 'news/');
+    define('URL_NEWS', URL_HOME . '#news');
     define('NAME_NEWS', 'News');
 
-    define('URL_FEATURE', URL_HOME . 'feature/');
+    define('URL_FEATURE', URL_HOME . '#feature');
     define('NAME_FEATURE', 'Feature');
 
-    define('URL_SERVICE', URL_HOME . 'service/');
+    define('URL_SERVICE', URL_HOME . '#service');
     define('NAME_SERVICE', 'Service');
 //
 //    define('URL_CASE', URL_HOME . 'case/');

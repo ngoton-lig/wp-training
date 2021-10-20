@@ -12,8 +12,8 @@ $menu = [
      * ],
      */
     [
-        'text' => NAME_HOME,
-        'href' => URL_HOME,
+        'text' => NAME_TOP,
+        'href' => URL_TOP,
         'is-current' => is_front_page(),
     ],
     [

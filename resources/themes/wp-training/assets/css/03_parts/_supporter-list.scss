@@ -1,0 +1,23 @@
+.supporter-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include pc() {
+        height: 215px;
+    }
+
+    @include sp() {
+        height: 150px;
+    }
+}
+
+.supporter-image {
+    @include pc() {
+        height: 65px;
+    }
+
+    @include sp() {
+        height: 35px;
+    }
+}
